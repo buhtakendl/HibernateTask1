@@ -14,7 +14,7 @@ public class UserServiceTest {
     private final byte testAge = 5;
 
 
-    @Test
+    @org.testng.annotations.Test
     public void dropUsersTable() {
         try {
             userService.dropUsersTable();
