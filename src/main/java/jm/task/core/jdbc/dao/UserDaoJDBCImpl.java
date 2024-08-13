@@ -18,7 +18,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void createUsersTable() throws SQLException {
 
-        String sql = "CREATE TABLE users (id INT PRIMARY KEY AUTO_INCREMENT," +
+        String sql = "CREATE TABLE NewUsers (id INT PRIMARY KEY AUTO_INCREMENT," +
                 "name VARCHAR(50), lastName VARCHAR(50), age TINYINT)";
 
         Statement statement = null;
@@ -42,22 +42,22 @@ public class UserDaoJDBCImpl implements UserDao {
     }
 
     public void dropUsersTable() throws SQLException {
-        String sql = "DROP TABLE users";
-        Statement statement = null;
-        try {
-            connection = getConnection();
-            statement = connection.createStatement();
-            statement.executeUpdate(sql);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } finally {
-            if (statement != null) {
-                statement.close();
-            }
-            if (connection != null) {
-                connection.close();
-            }
-        }
+//        String sql = "DROP TABLE NewUsers";
+//        Statement statement = null;
+//        try {
+//            connection = getConnection();
+//            statement = connection.createStatement();
+//            statement.executeUpdate(sql);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        } finally {
+//            if (statement != null) {
+//                statement.close();
+//            }
+//            if (connection != null) {
+//                connection.close();
+//            }
+//        }
     }
 
     public void saveUser(String name, String lastName, byte age) throws SQLException {

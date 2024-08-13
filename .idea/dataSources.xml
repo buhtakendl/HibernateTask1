@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="firsttable@localhost" uuid="e98a22b8-b21f-406e-b7b3-0badcdf56e9f">
+    <data-source source="LOCAL" name="java_dmeo@localhost" uuid="e98a22b8-b21f-406e-b7b3-0badcdf56e9f">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/firsttable</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/java_dmeo</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
